@@ -1,0 +1,7 @@
+{
+  "name": "tap-auth-demo-walletconnect",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
