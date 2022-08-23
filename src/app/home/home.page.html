@@ -5,6 +5,27 @@
     <p>This view is only accessible by authenticated users.</p>
     <br />
 
+    <ion-button (click)="showSessionInfo()">Show Session Info</ion-button>
+    <br />
+
     <ion-button (click)="logOut()">Log Out</ion-button>
+
+    <ion-modal [isOpen]="isModalOpen">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Modal</ion-title>
+            <ion-buttons slot="end">
+              <ion-button (click)="setOpen(false)">Close</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <pre>
+              {{ modalText | json }}
+          </pre>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
   </div>
 </ion-content>
