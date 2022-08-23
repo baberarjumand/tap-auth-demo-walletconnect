@@ -2,6 +2,9 @@
   <div id="container">
     <h1>Home</h1>
 
+    <p>You have successfully logged in with your wallet.</p>
+    <br />
+
     <p>This view is only accessible by authenticated users.</p>
     <br />
 
@@ -21,6 +24,9 @@
           </ion-toolbar>
         </ion-header>
         <ion-content class="ion-padding">
+          <p>
+            Your current session info is displayed as a JSON object below:
+          </p>
           <pre>
               {{ modalText | json }}
           </pre>
